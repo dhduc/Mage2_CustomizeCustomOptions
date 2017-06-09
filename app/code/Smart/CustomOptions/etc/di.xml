@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\CustomOptions">
+        <plugin name="AddCustomOption" type="Smart\CustomOptions\Plugin\Catalog\Ui\DataProvider\Product\Form\Modifier\CustomOptions" sortOrder="10"/>
+    </type>
+
+    <preference for="Magento\Catalog\Model\ResourceModel\Product\Option\Value" type="Smart\CustomOptions\Model\ResourceModel\Product\Option\Value"/>
+    <preference for="Magento\Catalog\Model\ResourceModel\Product\Option\Collection" type="Smart\CustomOptions\Model\ResourceModel\Product\Option\Collection"/>
+    <preference for="Magento\Catalog\Block\Product\View\Options\Type\Select" type="Smart\CustomOptions\Block\Catalog\Product\View\Options\Select"/>
+</config>

@@ -1,0 +1,21 @@
+<?php echo "
+<script>// <![CDATA[
+
+    require([
+        'jquery',
+        'jscolor',
+        'uploader_option'
+    ],function($){
+        $(window).bind('load', function() {
+            setInterval(function(){ jscolor.installByClassName('jscolor'); }, 100);
+        });
+    });
+    var base_url = '" .
+    /**
+     * @var Magento\Framework\View\Element\Template $block
+     */
+    $block->getBaseUrl()
+    ."'
+    // ]]>
+</script>"
+?>

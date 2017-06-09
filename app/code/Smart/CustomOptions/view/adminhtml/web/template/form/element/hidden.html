@@ -1,0 +1,23 @@
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<img
+     data-bind="
+        attr: {
+            src: value,
+            id: previewid,
+            style: 'max-height: 35px; width: auto',
+    }"/>
+<input class="admin__control-text" type="hidden"
+       data-bind="
+        value: value,
+        hasFocus: focused,
+        attr: {
+            name: inputName,
+            placeholder: placeholder,
+            'aria-describedby': noticeId,
+            id: uid
+    }"/>
